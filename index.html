@@ -59,17 +59,30 @@
       }
 
       .logo {
-        width: 76px;
-        height: 50px;
-        border: 4px solid var(--blue);
+        width: 120px;
+        height: 70px;
+        border: 2px solid var(--blue);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--white);
-        font-size: 21px;
-        font-weight: 800;
-        letter-spacing: 2px;
+        padding: 8px;
         margin-bottom: 60px;
+        animation: logoReveal 0.7s ease-out 0.3s both;
+        transition:
+          background-color 0.3s ease,
+          transform 0.3s ease;
+      }
+
+      .logo-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      .logo:hover {
+        background-color: var(--blue);
+        transform: scale(1.05);
       }
 
       .sidebar-label {
@@ -477,80 +490,11 @@
       <div class="profile">
         <aside class="sidebar">
           <div class="logo">
-            <svg
-              viewBox="0 0 600 300"
+            <img
+              src="./src/Logo (3).png"
+              alt="Elena Bauer Logo"
               class="logo-icon"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="EB Logo"
-            >
-              <!-- Left bracket -->
-              <path
-                d="M100 35 H55 V265 H100"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="32"
-                stroke-linecap="square"
-                stroke-linejoin="miter"
-              />
-
-              <!-- Equals sign: three bars -->
-              <rect
-                x="125"
-                y="78"
-                width="165"
-                height="30"
-                fill="currentColor"
-              />
-              <rect
-                x="125"
-                y="135"
-                width="165"
-                height="30"
-                fill="currentColor"
-              />
-              <rect
-                x="125"
-                y="192"
-                width="165"
-                height="30"
-                fill="currentColor"
-              />
-
-              <!-- B -->
-              <path
-                d="M350 78
-         H430
-         C475 78 500 102 500 135
-         C500 157 488 175 468 185
-         C493 196 508 214 508 238
-         C508 273 480 292 432 292
-         H350 Z
-
-         M393 112
-         V166
-         H426
-         C447 166 458 157 458 139
-         C458 121 447 112 426 112 Z
-
-         M393 205
-         V258
-         H430
-         C451 258 463 248 463 231
-         C463 214 451 205 430 205 Z"
-                fill="currentColor"
-                fill-rule="evenodd"
-              />
-
-              <!-- Right bracket -->
-              <path
-                d="M500 35 H545 V265 H500"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="32"
-                stroke-linecap="square"
-                stroke-linejoin="miter"
-              />
-            </svg>
+            />
           </div>
 
           <p class="sidebar-label">Frontend & Design</p>
