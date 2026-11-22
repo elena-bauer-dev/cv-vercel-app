@@ -247,7 +247,12 @@
         .logo {
           margin-bottom: 35px;
         }
-
+        .logo-icon {
+          width: 100%;
+          height: 100%;
+          display: block;
+          color: var(--white);
+        }
         .sidebar-footer {
           margin-top: 30px;
           padding-top: 0;
@@ -463,7 +468,54 @@
     <main class="page">
       <div class="profile">
         <aside class="sidebar">
-          <div class="logo">[=B]</div>
+          <div class="logo">
+            <svg
+              viewBox="0 0 160 64"
+              class="logo-icon"
+              aria-label="EB Logo"
+            >
+              <path
+                d="M28 8 H13 V56 H28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="8"
+                stroke-linecap="square"
+              />
+
+              <rect
+                x="42"
+                y="20"
+                width="34"
+                height="7"
+                fill="currentColor"
+              />
+              <rect
+                x="42"
+                y="37"
+                width="34"
+                height="7"
+                fill="currentColor"
+              />
+
+              <path
+                d="M91 10 H111
+             C126 10 133 18 133 27
+             C133 34 129 38 122 40
+             C132 42 138 47 138 54
+             C138 64 129 64 114 64
+             H91 Z"
+                fill="currentColor"
+              />
+
+              <path
+                d="M145 8 H150 V56 H145"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="8"
+                stroke-linecap="square"
+              />
+            </svg>
+          </div>
 
           <p class="sidebar-label">Frontend & Design</p>
 
